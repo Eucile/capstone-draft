@@ -13,7 +13,7 @@ function Post(props) {
   }
   var quoteStyles = {
     borderBottom: '1px solid #d9d9d9',
-    padding: '0 1.5em 1em',
+    padding: '3em 1.5em 1em',
     fontSize: '1.25em',
     lineHeight: '1.4em',
   }
