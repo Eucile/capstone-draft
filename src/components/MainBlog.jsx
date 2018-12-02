@@ -4,11 +4,13 @@ import PostList from './PostList';
 import { Link } from 'react-router-dom';
 
 class MainBlog extends React.Component{
-  constructor() {
-    super();
-    this.state = {
-      masterPostList: []
-    };
+
+  getPosts () {
+  let posts = [];
+  this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
+  posts.push(snapshot.val());
+  });
+  return posts
   }
 
   render(){
@@ -27,7 +29,7 @@ class MainBlog extends React.Component{
           <MainContent/>
           <Link to="/NewPostControl">new post</Link>
           <PostList
-          postList={this.state.masterPostList}/>
+          postList={this.getPosts()}/>
           </div>
         </div>
       </div>

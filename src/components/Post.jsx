@@ -32,7 +32,7 @@ function Post(props) {
       <div>
           <h1 style={titleStyles}><a href="">{props.title}</a></h1>
           <h2 style={quoteStyles}>“{props.quote}”</h2>
-          <p style={authorStyles}>{props.author} - posted {props.formattedWaitTime} ago</p>
+          <p style={authorStyles}>{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
       </div>
     </div>
@@ -44,7 +44,7 @@ Post.propTypes = {
   quote: PropTypes.string,
   author: PropTypes.string,
   content: PropTypes.string,
-  formattedWaitTime: PropTypes.string.isRequired,
+  created_on: PropTypes.string.isRequired,
 };
 
 export default Post;

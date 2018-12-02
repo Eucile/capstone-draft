@@ -46,7 +46,7 @@ function App(){
         }
         a:hover {
           opacity: 0.6;
-          color: thistle;
+          color: #CCCCFF;
           transition: 0.7s;
         }
     `}</style>

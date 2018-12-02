@@ -11,7 +11,7 @@ function PostList(props) {
           author={post.author}
           quote={post.quote}
           content={post.content}
-          formattedWaitTime={post.formattedWaitTime}
+          created_on={post.created_on}
           key={post.id}
         />
       )}

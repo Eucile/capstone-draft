@@ -50,9 +50,9 @@ class LogInForm extends React.Component{
           display: flex;
           justify-content: center;
           flex-flow: column nowrap;
-          background: rgba(0, 0, 0, .7);
           padding: 3em;
           margin: 0 auto;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.2)), color-stop(.5, #CCCCFF));
         }
       `}</style>
       <form className="user-sign-in">
