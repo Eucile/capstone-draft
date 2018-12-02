@@ -3,6 +3,7 @@ import MainContent from "./MainContent";
 import PostList from './PostList';
 import NewPostControl from './NewPostControl';
 import Moment from 'moment';
+import { Link } from 'react-router-dom';
 
 class MainBlog extends React.Component{
   constructor() {
@@ -10,30 +11,6 @@ class MainBlog extends React.Component{
     this.state = {
       masterPostList: []
     };
-    this.handleAddingNewPostToList = this.handleAddingNewPostToList.bind(this);
-  }
-
-  componentDidMount() {
-    this.waitTimeUpdateTimer = setInterval(() =>
-      this.updatePostElapsedWaitTime(),
-      5000
-    );
-  }
-  componentWillUnmount(){
-    clearInterval(this.waitTimeUpdateTimer);
-  }
-  updatePostElapsedWaitTime() {
-    let newMasterPostList = this.state.masterPostList.slice();
-    newMasterPostList.forEach((post) =>
-      post.formattedWaitTime = (post.timeOpen).fromNow(true)
-    );
-    this.setState({masterPostList: newMasterPostList});
-  }
-  handleAddingNewPostToList(newPost){
-    var newMasterPostList = this.state.masterPostList.slice();
-    newPost.formattedWaitTime = (newPost.timeOpen).fromNow(true)
-    newMasterPostList.push(newPost);
-    this.setState({masterPostList: newMasterPostList});
   }
 
   render(){
@@ -50,10 +27,9 @@ class MainBlog extends React.Component{
         <div style={MainBlogStyle}>
           <div>
           <MainContent/>
+          <Link to="/NewPostControl">new post</Link>
           <PostList
           postList={this.state.masterPostList}/>
-          <NewPostControl
-          onNewPostCreation={this.handleAddingNewPostToList}/>
           </div>
         </div>
       </div>

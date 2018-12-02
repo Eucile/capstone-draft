@@ -7,12 +7,6 @@ function MainContent(){
   return (
     <div style={mainContentStyles}>
       <style jsx>{`
-        p {
-          font-weight: 400;
-          font-size: 1.125em;
-          line-height: 1.825em;
-          margin: 0 0 1em 0;
-        }
         .glitch:hover {
         animation: glitch 0.2s infinite;
         color: red;
@@ -25,7 +19,6 @@ function MainContent(){
     }
   }
 }
-
       @-webkit-keyframes glitch {
   0% {
     text-shadow: 12px 0px 0px #00aaff;

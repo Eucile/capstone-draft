@@ -4,10 +4,11 @@ import Footer from "./Footer";
 import MainBlog from "./MainBlog";
 import { Switch, Route } from 'react-router-dom';
 import NewPostControl from './NewPostControl';
+import LogInForm from './LogInForm';
 
 function App(){
   var mainDiv = {
-    width: 970,
+    width: '80%',
     marginLeft: 'auto',
     marginRight: 'auto',
     background: 'rgba(0, 0, 0, .7)',
@@ -43,6 +44,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={MainBlog} />
         <Route path='/NewPostControl' component={NewPostControl} />
+        <Route path='/LogInForm' component={LogInForm} />
       </Switch>
       <Footer/>
     </div>
