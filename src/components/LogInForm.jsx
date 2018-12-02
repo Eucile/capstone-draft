@@ -55,12 +55,12 @@ class LogInForm extends React.Component{
             type='text'
             id='username'
             placeholder='username:'
-            ref={(input) => {_username = input;}}/>
+            ref={(input) => {this.username = input;}}/>
           <input
             type='text'
             id='password'
             placeholder='password:'
-            ref={(input) => {_password = input;}}/>
+            ref={(input) => {this.password = input;}}/>
         <button type='submit'>Log In</button>
       </form>
       </div>
