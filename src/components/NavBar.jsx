@@ -6,23 +6,22 @@ function NavBar(){
     display: "flex",
     marginLeft: "auto",
     marginRight: "auto",
-    justifyContent: "space-between",
-    width: "100%"
+    justifyContent: "space-around",
+    width: "100%",
   };
 
   var navStyles = {
-    marginLeft: "5em",
-    marginRight: "5em",
+    paddingRight: '8em',
   };
 
   return (
     <div>
       <ul style={navBox}>
-        <li style={navStyles}><a href="">home</a></li>
-        <li style={navStyles}><a href="">about</a></li>
-        <li style={navStyles}><a href="">contact</a></li>
-        <li style={navStyles}><a href="">archive</a></li>
-        <li style={navStyles}><a href="">art</a></li>
+        <li style={navStyles}><Link to="/MainBlog">home</Link></li>
+        <li style={navStyles}>about</li>
+        <li style={navStyles}>contact</li>
+        <li style={navStyles}>archive</li>
+        <li style={navStyles}>art</li>
         <li style={navStyles}><Link to="/LogInForm">log in</Link></li>
       </ul>
     </div>
