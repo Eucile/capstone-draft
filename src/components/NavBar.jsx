@@ -17,7 +17,7 @@ function NavBar(){
   return (
     <div>
       <ul style={navBox}>
-        <li style={navStyles}><Link to="/MainBlog">home</Link></li>
+        <li style={navStyles}><Link to="/">home</Link></li>
         <li style={navStyles}>about</li>
         <li style={navStyles}>contact</li>
         <li style={navStyles}>archive</li>

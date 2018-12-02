@@ -12,10 +12,8 @@ const { firebaseConfig } = constants;
 
 firebase.initializeApp(firebaseConfig);
 var db = firebase.database();
-const posts = firebase.database().ref('posts');
-const users = firebase.database().ref('users');
-
-users.push({userName: 'test_user', password: '123'})
+const posts = db.ref('posts');
+const users = db.ref('users');
 
 function App(){
   var mainDiv = {
@@ -48,14 +46,15 @@ function App(){
         }
         a:hover {
           opacity: 0.6;
+          color: thistle;
           transition: 0.7s;
         }
     `}</style>
       <Header/>
       <Switch>
-        <Route exact path='/' component={MainBlog} />
-        <Route path='/NewPostControl' component={NewPostControl} />
-        <Route path='/LogInForm' component={LogInForm} />
+        <Route exact path='/' component={() => <MainBlog posts={posts} />} />
+        <Route path='/NewPostControl' component={() => <NewPostControl posts={posts} />}/>
+        <Route path='/LogInForm' component={() => <LogInForm users={users}/>} />
       </Switch>
       <Footer/>
     </div>
