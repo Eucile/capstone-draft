@@ -9,6 +9,7 @@ function PostList(props) {
         <Post
           title={post.title}
           author={post.author}
+          quote={post.quote}
           content={post.content}
           formattedWaitTime={post.formattedWaitTime}
           key={post.id}

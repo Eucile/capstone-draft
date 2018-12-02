@@ -4,7 +4,7 @@ import PostList from './PostList';
 import NewPostControl from './NewPostControl';
 import Moment from 'moment';
 
-class MainArticle extends React.Component{
+class MainBlog extends React.Component{
   constructor() {
     super();
     this.state = {
@@ -37,7 +37,7 @@ class MainArticle extends React.Component{
   }
 
   render(){
-    var MainArticleStyle = {
+    var MainBlogStyle = {
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
@@ -47,7 +47,7 @@ class MainArticle extends React.Component{
     };
     return (
       <div>
-        <div style={MainArticleStyle}>
+        <div style={MainBlogStyle}>
           <div>
           <MainContent/>
           <PostList
@@ -61,4 +61,4 @@ class MainArticle extends React.Component{
   }
 }
 
-export default MainArticle;
+export default MainBlog;

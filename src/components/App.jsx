@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import MainArticle from "./MainArticle";
+import MainBlog from "./MainBlog";
 import { Switch, Route } from 'react-router-dom';
 import NewPostControl from './NewPostControl';
 
@@ -36,12 +36,12 @@ function App(){
         }
         a:hover {
           opacity: 0.6;
-          transition: 0.3s;
+          transition: 0.7s;
         }
     `}</style>
       <Header/>
       <Switch>
-        <Route exact path='/' component={MainArticle} />
+        <Route exact path='/' component={MainBlog} />
         <Route path='/NewPostControl' component={NewPostControl} />
       </Switch>
       <Footer/>
