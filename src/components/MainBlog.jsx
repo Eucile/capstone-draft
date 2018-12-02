@@ -1,8 +1,6 @@
 import React from "react";
 import MainContent from "./MainContent";
 import PostList from './PostList';
-import NewPostControl from './NewPostControl';
-import Moment from 'moment';
 import { Link } from 'react-router-dom';
 
 class MainBlog extends React.Component{

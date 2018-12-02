@@ -35,7 +35,12 @@ class LogInForm extends React.Component{
           border: none;
           border-radius: 25px;
           font-weight: bold;
-          padding: 5px;
+          padding: 7px;
+        }
+        button:hover {
+          opacity: 0.6;
+          color: thistle;
+          transition: 0.7s;
         }
         p {
           line-height: 1;

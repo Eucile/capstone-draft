@@ -12,6 +12,13 @@ class NewPostForm extends React.Component{
     this.handleNewPostFormSubmission = this.handleNewPostFormSubmission.bind(this);
   }
 
+  componentDidMount(){
+    let _title = null;
+    let _quote = null;
+    let _author = null;
+    let _content = null;
+  }
+
   handleNewPostFormSubmission(event) {
     event.preventDefault();
     let post = {
