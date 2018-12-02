@@ -5,6 +5,17 @@ import MainBlog from "./MainBlog";
 import { Switch, Route } from 'react-router-dom';
 import NewPostControl from './NewPostControl';
 import LogInForm from './LogInForm';
+import firebase from 'firebase';
+import constants from './../constants';
+
+const { firebaseConfig } = constants;
+
+firebase.initializeApp(firebaseConfig);
+var db = firebase.database();
+const posts = firebase.database().ref('posts');
+const users = firebase.database().ref('users');
+
+users.push({userName: 'test_user', password: '123'})
 
 function App(){
   var mainDiv = {

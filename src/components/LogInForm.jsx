@@ -14,6 +14,7 @@ class LogInForm extends React.Component{
       <style jsx>{`
         input, textarea {
           height: auto;
+          color: white;
           background: black;
           border-top: hidden;
           border-right: hidden;
@@ -57,7 +58,7 @@ class LogInForm extends React.Component{
             placeholder='username:'
             ref={(input) => {this.username = input;}}/>
           <input
-            type='text'
+            type='password'
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
