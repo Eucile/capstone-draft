@@ -35,6 +35,7 @@ function App(){
           width: 100%;
           background-size: cover;
           display: table;
+          background-attachment: fixed;
           font-family: 'Nunito Sans', sans-serif;
         }
         li {

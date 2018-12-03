@@ -4,7 +4,6 @@ import Moment from 'moment';
 
 function Post(props) {
   var mainContentStyles = {
-    padding: '0 2em',
     marginLeft: '1em',
   }
   var titleStyles = {
@@ -27,6 +26,7 @@ function Post(props) {
         .black-box {
           background: black;
           font-family: 'Nunito Sans', sans-serif;
+          padding: 3em;
         }
       `}</style>
       <div>
