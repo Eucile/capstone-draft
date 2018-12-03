@@ -7,7 +7,6 @@ import NewPostControl from './NewPostControl';
 import LogInForm from './LogInForm';
 import firebase from 'firebase';
 import constants from './../constants';
-
 const { firebaseConfig } = constants;
 
 firebase.initializeApp(firebaseConfig);

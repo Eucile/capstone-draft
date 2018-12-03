@@ -12,23 +12,18 @@ class NewPostForm extends React.Component{
     this.handleNewPostFormSubmission = this.handleNewPostFormSubmission.bind(this);
   }
 
-  componentDidMount(){
-    let _title = null;
-    let _quote = null;
-    let _author = null;
-    let _content = null;
-  }
 
   handleNewPostFormSubmission(event) {
     event.preventDefault();
+    let timeStamp = moment().format();
     let post = {
       title: this._title.value,
       quote: this._quote.value,
       author: this._author.value,
       content: this._content.value,
       id: v4(),
-      created_on: moment().format(),
-      updated_on: moment().format()
+      created_on: timeStamp,
+      updated_on: timeStamp
     }
     this.props.posts.push(post).then(
       this.setState({isPosted: true})

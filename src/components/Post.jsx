@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import Moment from 'moment';
 
 function Post(props) {
-  var mainContentStyles = {
-    marginLeft: '1em',
-  }
   var titleStyles = {
     margin: 0,
     fontFamily: "'Fira Sans', sans-serif",
