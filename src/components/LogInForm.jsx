@@ -35,7 +35,7 @@ class LogInForm extends React.Component{
           border: none;
           border-radius: 25px;
           font-weight: bold;
-          padding: 7px;
+          padding: 10px;
         }
         button:hover {
           opacity: 0.6;
@@ -53,7 +53,7 @@ class LogInForm extends React.Component{
           flex-flow: column nowrap;
           padding: 3em;
           margin: 0 auto;
-          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.4)), to(rgba(0,0,0,0.2)), color-stop(.5, #696969));
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.4)), to(rgba(0,0,0,0.2)), color-stop(.4, #696969));
         }
       `}</style>
       <form className="user-sign-in">
