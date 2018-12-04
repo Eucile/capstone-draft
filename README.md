@@ -50,8 +50,7 @@ First, make sure you have node package manager installed globally. Check out htt
 
 `$ cd capstone-draft`
 
-##IMPORTANT!
-### This project works and is currently informed by a firebase database but the config file is needed to run it. (Sometime this week I'll deploy it publicly though.)  
+### This project works and is currently informed by a firebase database but the config file is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
 
 `$ npm install`
 
