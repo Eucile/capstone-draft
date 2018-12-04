@@ -15,7 +15,7 @@ class NewPostForm extends React.Component{
 
   handleNewPostFormSubmission(event) {
     event.preventDefault();
-    let timeStamp = moment().format();
+    let timeStamp = moment().format('MM-DD-YYYY');
     let post = {
       title: this._title.value,
       quote: this._quote.value,
