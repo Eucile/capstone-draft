@@ -19,6 +19,7 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 * routing throughout, including log in page, blog entry form, about page, home, etc.
 * user dashboard with convenient links to their past posts for review and editing purposes.
 * Master blog list limited to so many characters, with the full post visible on click.
+* Rich text editor feature that preserves whitespace and text formatting for bloggers. 
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 

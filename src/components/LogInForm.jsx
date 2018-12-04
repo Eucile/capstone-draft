@@ -35,7 +35,8 @@ class LogInForm extends React.Component{
           border: none;
           border-radius: 25px;
           font-weight: bold;
-          padding: 10px;
+          text-transform: uppercase;
+          letter-spacing: .2em;
         }
         button:hover {
           opacity: 0.6;
@@ -68,7 +69,7 @@ class LogInForm extends React.Component{
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-        <button type='submit'>Log In</button>
+        <button type='submit'>sign in</button>
       </form>
       </div>
     );

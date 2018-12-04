@@ -23,7 +23,7 @@ function Post(props) {
         .black-box {
           background: black;
           font-family: 'Nunito Sans', sans-serif;
-          padding: 3em;
+          padding: 2em;
         }
       `}</style>
       <div>
