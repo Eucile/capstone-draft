@@ -3,8 +3,6 @@
 #### by Krystal Foster
 #### Nov. 30, 2018
 
-### Description
-
 ## Name of Project: Blog Engine
 
 ### Project’s Purpose or Goal:
@@ -19,7 +17,9 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 * routing throughout, including log in page, blog entry form, about page, home, etc.
 * user dashboard with convenient links to their past posts for review and editing purposes.
 * Master blog list limited to so many characters, with the full post visible on click.
-* Rich text editor feature that preserves whitespace and text formatting for bloggers. 
+* Rich text editor feature that preserves whitespace and text formatting for bloggers.
+
+## NOTE: The pushed content "postlist" portion of this project works and is currently informed by a firebase database but the api key is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
@@ -50,8 +50,6 @@ First, make sure you have node package manager installed globally. Check out htt
 `$ git clone https://github.com/Eucile/capstone-draft`
 
 `$ cd capstone-draft`
-
-### This project works and is currently informed by a firebase database but the config file is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
 
 `$ npm install`
 

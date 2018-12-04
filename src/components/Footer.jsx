@@ -5,6 +5,7 @@ function Footer(){
   var FooterStyles = {
     display: "flex",
     justifyContent: "center",
+    width: "100%",
     justifyContent: "space-around",
     marginLeft: 'auto',
     marginRight: 'auto',
