@@ -19,14 +19,14 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 * Master blog list limited to so many characters, with the full post visible on click.
 * Rich text editor feature that preserves whitespace and text formatting for bloggers.
 
-## NOTE: The pushed content "postlist" portion of this project works and is currently informed by a firebase database but the api key is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
+## NOTE: Clicking the "home" link routes you to the "postlist" portion of this project which works and is currently informed by a firebase database, but the api key is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
 * React/jsx
 * JavaScript
-* Redux  
-* Firebase
+* Firebase data and auth 
+* possibly draft.js or another framework to allow rich text editing
 
 ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Keyframes, Frame } from 'react-keyframes';
 
 function NavBar(){
   var navBox = {
