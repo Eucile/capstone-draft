@@ -10,7 +10,7 @@ class MainBlog extends React.Component{
   this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
   posts.push(snapshot.val());
   });
-  return posts
+  return posts.reverse();
   }
 
   render(){
